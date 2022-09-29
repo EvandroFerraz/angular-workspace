@@ -11,12 +11,15 @@ import { AppComponent } from './app.component';
 import { ClienteInserirComponent } from './clientes/cliente-inserir/cliente-inserir.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
+import { ClienteListaComponent } from './clientes/cliente-lista/cliente-lista.component';
+import { MatExpansionModule } from '@angular/material/expansion'
 
 @NgModule({
   declarations: [
     AppComponent,
     ClienteInserirComponent,
-    CabecalhoComponent
+    CabecalhoComponent,
+    ClienteListaComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +29,7 @@ import { CabecalhoComponent } from './cabecalho/cabecalho.component';
     MatCardModule,
     MatButtonModule,
     MatToolbarModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

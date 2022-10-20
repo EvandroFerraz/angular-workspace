@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { ClienteListaComponent } from './clientes/cliente-lista/cliente-lista.component';
 import { MatExpansionModule } from '@angular/material/expansion'
+import { ClienteService } from './clientes/cliente.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { MatExpansionModule } from '@angular/material/expansion'
     MatToolbarModule,
     MatExpansionModule
   ],
-  providers: [],
+  providers: [ClienteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

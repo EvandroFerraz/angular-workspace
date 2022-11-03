@@ -15,6 +15,8 @@ import { ClienteListaComponent } from './clientes/cliente-lista/cliente-lista.co
 import { MatExpansionModule } from '@angular/material/expansion'
 import { ClienteService } from './clientes/cliente.service';
 
+import { HttpClientModule} from '@angular/common/http'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +32,8 @@ import { ClienteService } from './clientes/cliente.service';
     MatCardModule,
     MatButtonModule,
     MatToolbarModule,
-    MatExpansionModule
+    MatExpansionModule,
+    HttpClientModule
   ],
   providers: [ClienteService],
   bootstrap: [AppComponent]
